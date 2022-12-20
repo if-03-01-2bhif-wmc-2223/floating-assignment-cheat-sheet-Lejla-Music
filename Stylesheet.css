@@ -42,4 +42,21 @@ section{
     color: #c7c2c2;
 }
 
+dl{
+    border-radius: 10px;
+    padding: 30px;
+    border-style: solid;
+    float: left;
+}
+dl dt{
 
+    float: left;
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+dl dd{
+    overflow: auto;
+    float: left;
+}
