@@ -1,18 +1,139 @@
-<!doctype html>
-<html>
-  <head>
-     <title>Floating Assignment - YOUR TITLE HERE</title>
-  </head>
-  <body>
-    <h1>Floating Assignment - Cheat Sheet<h1>
-      <p>This is a (very ugly) placeholder page for your WMC cheat sheet.
-        You can use it in any way suitable to fulfil your task.</p>
-      <ul>
-        This includes:
-        <li>Modify this file as needed</li>
-        <li>Replace the content of this file with your cheat sheet</li>
-        <li>Use it as overview page that links to separate pages for each topic</li>
-        <li>Add a menu bar</li>
-      </ul>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML and CSS</title>
+
+    <link rel="stylesheet" href="Stylesheet.css">
+</head>
+    <body>
+    <a style="color: #c7c2c2; font-family: Dubai " href="WorldWideWeb.html">World Wide Web, </a>
+    <a style="color: #c7c2c2; font-family: Dubai " href="HtmlCss.html">Html and Css</a>
+    <a style="color: #c7c2c2; font-family: Dubai " href="ListsAndTables.html">Html and Css</a>
+
+    <h1>HTML BASICS</h1>
+        <section>
+            <h2>Important HTML Tags</h2>
+            <article>
+                <h3>&lt;!DOCTYPE html element&gt;</h3>
+                Like said, the &lt;!DOCTYPE html element&gt; has to be in every html file. It helps browsers to display web pages correctly.
+                In HTML5 you have to do &lt;!DOCTYPE html&gt;
+
+                <h3>Headings</h3>
+                A heading can start from &lt;h1&gt; to  &lt;h6&gt;. It signalizes something important.
+
+                <h3>Paragraphs</h3>
+                In HTML a Paragraph is defined with the &lt;p&gt; tag.
+
+                <h3>Links</h3>
+                Links are defined with &lt;a href = "URL"&gt;This is a link &lt;/a&gt; tag.
+
+                <h3>Images</h3>
+                The &lt;img&gt; is used to embed an image in an HTML page. The tag creates a holding space for the referenced image. The tag requires/has two attributes. src and alt.
+                You can also directly specify the height and width of an image which is better, because the website may flicker.
+
+                <h3>Head</h3>
+                    The &lt;head&gt; is for metadata (data about data) and is placed between the &lt;html&gt; and &lt;body&gt; tag. Anything about the HTML document is there but it is not displayed.
+                    Elements that can/should go inside the head element:
+                    title,style,base,link,meta,script,noscript.
+
+                <h3>Rest</h3>
+                &lt;!-- bla bla --&gt; is a comment
+            </article>
+        </section>
+
+        <section>
+            <h2>CSS</h2>
+                <article>
+
+                    <h3>Syntax</h3>
+                    Components of a CSS is a selector f.e h1 then follows a declaration with {}. In this declaration there follows a property:value.
+
+                    <h3>Colors</h3>
+                    Color: Fuchsia Hex: #FF00FF
+
+                    <h3>Font</h3>
+                    If the first font in the font family won't work, then you can put more in case the browser can't read it.
+
+
+                    <h3>Backgrounds</h3>
+                    Backgroundcolor is specified by valid color name, rbg value or hex value.
+                    For background image, use background-image: url("pepe.gif"); <= can also be specific
+                    f.e. the p element.
+
+                    <h4>Background Image Repeat</h4>
+                    By default, the background-image repeats itself both horizontally and vertically.
+                    With background-repeat: repeat-x <= Image is only horizontally repeated.
+
+                    <h4>Background attachment</h4>
+                    With background-attachment:fixed <= the image will not scroll with the rest of page.
+
+                    <h3>Text</h3>
+                    Text color:     color:blue; <br>
+                    Text align: Used to set the horizontal aligment of text. Text can be left or right aligned, centered, or justified. <br>
+                    Text Decor: text-decoration-line: property used to add decoration line to text. <br>
+                    Text Transformation: text-transform: uppercasse <= specify uppercase and lowercase of text.
+
+                    <h3>Fonts</h3>
+                    Difference between sans and sans-serif is, that sans has small strokes attached
+                    to letter and sans-serif has clean lines.
+
+                    <h4>Font Family</h4>
+                    It is used as a "fallback" system, to ensure maximum compability between browsers and OS's.
+                    Start with wanted font, end with generic Family.
+
+                    <h4>Font Style</h4>
+                    Property is used to specify text. Normal, Italics (is in italics), oblique (leaning, like
+                    italics but less supported), bold (weight font)
+
+                    <h4>Font Size</h4>
+                    font-size: 40px, setting text size with pixels. With pixels, you can use zoom tool to resize
+                    the entire page.
+
+                    <h4>Set Font Size With Em</h4>
+                    1em = current font size = 16px. Size can be calc. with formula: pixels/16 = em
+
+                    <h4>Styling Link</h4>
+                    Can be styled with any css property. a {color: red;}
+
+                    <h3>Combinators</h3>
+                    It explains the relationship between the selectors. Descendant selector (space), child
+                    selector (>), adjacent sibling selector (+), general sibling selector (~)
+
+                    <h4>Descendant</h4>
+                    It matches all elements that are descendants (verwandt) of a specified element.
+
+                    f.e: section p {color: blue;}
+
+                    <h4>Child selector</h4>
+                    Selects all children of a specified element.
+
+                    f.e: article > p {color: yellow;}
+
+                    <h4>Adjacent Sibling Selector</h4>
+                    Selects an element that is directly after another specific element.
+                    f.e: after the div elements, the p will be yellow:
+                    div + p {color: yellow;}
+
+                    <h4>General Sibling Selector</h4>
+                    It selects all elemts that are next siblings of a specified element.
+
+                    <h3>Pseudo-Class</h3>
+                    Syntax:
+                    selector: pseudo-class {property: vaulue;}<br>
+
+                    a:link >= unvisited link <br>
+                    a:visited >= visited link <br>
+                    a:hover >= mouse over link <br>
+                    a:active >= selected link <br>
+
+                    <h3>The :first-child Pseudo-class</h3>
+                    :first-child class matches a specified element that is the first child of another element. <br>
+
+                    f.e: matches the first element of any element. <br>
+                    p:first-child {color:blue;} <br>
+
+                </article>
+        </section>
+    </body>
 </html>

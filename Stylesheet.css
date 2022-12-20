@@ -1,0 +1,45 @@
+body {
+    background-color: #151313;
+}
+h1{
+    font-family: "Dubai Light";
+    color: #e0e0e0;
+    text-shadow: 1px 1px rosybrown;
+    text-align: center;
+}
+h2{
+    font-family: "Dubai Light";
+    color: #e0e0e0;
+    text-shadow: 1px 1px rosybrown;
+    text-align: center;
+
+}
+h3{
+
+    font-family: "Dubai Light";
+    color: #e0e0e0;
+    text-shadow: 1px 1px rosybrown;
+    text-align: center;
+
+}
+.box{
+    text-align: center;
+    margin-left: 370px;
+    inline-size: 505px;
+    overflow-wrap: break-word;
+    font-family: "Dubai";
+    font-size: 16px;
+    color: #c7c2c2;
+
+}
+section{
+    text-align: center;
+    margin-left: 370px;
+    inline-size: 505px;
+    overflow-wrap: break-word;
+    font-family: "Dubai";
+    font-size: 16px;
+    color: #c7c2c2;
+}
+
+
